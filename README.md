@@ -65,7 +65,7 @@ Everything lives in the "iPhone 14 device frame" block at the end of `src/index.
 
 `.github/workflows/deploy.yml` builds the app on every push to `main` and publishes it with GitHub Pages.
 
-One-time setup in the repository: **Settings → Pages → Source → GitHub Actions**.
+One-time setup in the repository: open **[Settings → Pages](https://github.com/rr188351/AI-Career-Mentor-App/settings/pages)** and set **Build and deployment → Source** to **GitHub Actions**. Until that is done, the workflow stops at its "Configure Pages" step, and GitHub's built-in *pages-build-deployment* (branch source) publishes the raw repository instead of the built app.
 
 What the workflow does:
 
