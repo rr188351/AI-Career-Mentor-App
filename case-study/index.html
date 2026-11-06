@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Career Mentor — a UX and UI case study for an explainable career guidance mobile application.">
+  <meta name="theme-color" content="#080b14">
+  <title>AI Career Mentor — UX/UI Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('acm-portfolio-theme')||'dark'}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to case study</a>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#overview" aria-label="AI Career Mentor case study home">
+      <span class="brand-mark"><span></span></span>
+      <span>AI Career Mentor</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Case study">
+      <a href="#overview">Overview</a>
+      <a href="#ux-study">UX Study</a>
+      <a href="#ui-study">UI Study</a>
+      <a href="#screens">Screens</a>
+      <a href="#system">Design System</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+      <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 15.2A8.5 8.5 0 0 1 8.8 3.3a8.5 8.5 0 1 0 11.9 11.9Z"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <section id="overview" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">UX/UI PRODUCT CASE STUDY · MOBILE EXPERIENCE</p>
+        <h1>Clarity through<br><span>intelligence.</span></h1>
+        <p class="hero-lede">AI Career Mentor helps students and early-career professionals move from career confusion to explainable recommendations and achievable next steps.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#ux-study">Explore the UX study <span>↘</span></a>
+          <a class="button secondary" href="#ui-study">See the interface</a>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>Platform</dt><dd>Mobile · iPhone</dd></div>
+          <div><dt>Focus</dt><dd>Career guidance</dd></div>
+          <div><dt>Build</dt><dd>React · TypeScript</dd></div>
+        </dl>
+      </div>
+      <div class="hero-visual reveal" data-delay="1">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="phone phone-hero">
+          <div class="phone-speaker"></div>
+          <img src="./assets/screenshots/home.png" alt="AI Career Mentor home dashboard showing mentor guidance, a UX Designer recommendation, and roadmap progress">
+        </div>
+        <div class="float-note note-one"><span>88%</span> explainable match</div>
+        <div class="float-note note-two"><i></i> Roadmap in progress</div>
+      </div>
+    </section>
+
+    <section class="project-strip" aria-label="Project summary">
+      <div><span>01</span><strong>Problem</strong><p>Conflicting advice and unclear next steps.</p></div>
+      <div><span>02</span><strong>Approach</strong><p>Assess, explain, compare, then act.</p></div>
+      <div><span>03</span><strong>Outcome</strong><p>A working high-fidelity frontend prototype.</p></div>
+    </section>
+
+    <section class="section overview-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">PROJECT OVERVIEW</p>
+        <h2>Turning an open-ended decision into a guided journey.</h2>
+      </div>
+      <div class="overview-grid">
+        <article class="statement-card glass reveal">
+          <span class="card-index">THE PROBLEM</span>
+          <p class="statement">Career seekers face too many options, generic advice and no clear way to understand what to do next.</p>
+          <p>The product concept combines a concise profile, transparent career matches and a milestone-based roadmap without presenting recommendations as guarantees.</p>
+        </article>
+        <div class="overview-facts reveal" data-delay="1">
+          <div><span>Primary persona</span><strong>Ananya Sharma, 21</strong><p>Final-year Computer Science student</p></div>
+          <div><span>Target audience</span><strong>Students to career switchers</strong><p>Also recent graduates and early-career professionals</p></div>
+          <div><span>Core experience</span><strong>Discover → Understand → Act</strong><p>Assessment, recommendations, comparison and roadmap</p></div>
+          <div><span>Implementation</span><strong>React 19 + Vite</strong><p>TypeScript, CSS, responsive frontend state</p></div>
+        </div>
+      </div>
+      <div class="principles reveal">
+        <article><span>01</span><h3>Explain, don’t prescribe</h3><p>Every recommendation needs a reason users can inspect.</p></article>
+        <article><span>02</span><h3>Make progress tangible</h3><p>Break career preparation into small, visible milestones.</p></article>
+        <article><span>03</span><h3>Keep options open</h3><p>Comparison supports exploration rather than a single “correct” path.</p></article>
+        <article><span>04</span><h3>Design for trust</h3><p>Use clear language, restrained metrics and explicit AI caveats.</p></article>
+      </div>
+    </section>
+
+    <section id="showcase" class="section showcase-section">
+      <div class="showcase-copy reveal">
+        <p class="eyebrow">INTERACTIVE SCREEN SHOWCASE</p>
+        <h2>A focused interface for every step forward.</h2>
+        <p>These are genuine captures from the implemented application at its native 386 × 812 pixel frame.</p>
+        <div class="screen-caption" aria-live="polite">
+          <span id="screen-count">01 / 08</span>
+          <h3 id="screen-name">Home Dashboard</h3>
+          <p id="screen-description">A prioritized view of mentor guidance, career fit and the next roadmap milestone.</p>
+        </div>
+        <div class="showcase-controls">
+          <button id="screen-prev" type="button" aria-label="Previous app screen">←</button>
+          <button id="screen-next" type="button" aria-label="Next app screen">→</button>
+        </div>
+      </div>
+      <div class="showcase-stage reveal" data-delay="1">
+        <div class="phone phone-showcase">
+          <div class="phone-speaker"></div>
+          <img id="showcase-image" src="./assets/screenshots/home.png" alt="Home Dashboard screen">
+          <span class="screen-reflection" aria-hidden="true"></span>
+        </div>
+        <div class="screen-thumbnails" role="tablist" aria-label="Choose app screen">
+          <button class="active" role="tab" aria-selected="true" data-screen="home"><img src="./assets/screenshots/home.png" alt=""><span>Home</span></button>
+          <button role="tab" aria-selected="false" data-screen="interests"><img src="./assets/screenshots/interests.png" alt=""><span>Profile</span></button>
+          <button role="tab" aria-selected="false" data-screen="results"><img src="./assets/screenshots/results.png" alt=""><span>Results</span></button>
+          <button role="tab" aria-selected="false" data-screen="explore"><img src="./assets/screenshots/explore.png" alt=""><span>Explore</span></button>
+          <button role="tab" aria-selected="false" data-screen="details"><img src="./assets/screenshots/details.png" alt=""><span>Details</span></button>
+          <button role="tab" aria-selected="false" data-screen="mentor"><img src="./assets/screenshots/mentor.png" alt=""><span>Mentor</span></button>
+          <button role="tab" aria-selected="false" data-screen="roadmap"><img src="./assets/screenshots/roadmap.png" alt=""><span>Roadmap</span></button>
+          <button role="tab" aria-selected="false" data-screen="progress"><img src="./assets/screenshots/progress.png" alt=""><span>Progress</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="ux-study" class="section study-section">
+      <div class="section-kicker reveal"><span>01</span><p>UX CASE STUDY</p></div>
+      <div class="section-heading split reveal">
+        <h2>Designing direction, not just recommendations.</h2>
+        <p>The documented process frames career choice as an evolving relationship: discover, understand, plan, act, review and grow.</p>
+      </div>
+
+      <div class="process-line reveal" aria-label="Documented design process">
+        <span>Research planning</span><i></i><span>Persona</span><i></i><span>Journey</span><i></i><span>IA & flows</span><i></i><span>High fidelity</span><i></i><span>Prototype</span>
+      </div>
+
+      <div class="research-layout">
+        <div class="research-copy reveal">
+          <p class="eyebrow">RESEARCH FOUNDATION</p>
+          <h3>Questions before conclusions.</h3>
+          <p>The planning document defines qualitative and quantitative survey questions around career confidence, trust, preferred guidance, roadmap motivation and progress cadence.</p>
+          <div class="evidence-note">
+            <strong>Evidence status</strong>
+            <p>No completed participant study was supplied. The values shown here are explicitly documented as a fabricated layout sample using 20 hypothetical respondents—not validated findings.</p>
+          </div>
+        </div>
+        <div class="research-chart glass reveal" data-delay="1">
+          <div class="chart-head"><span>Illustrative survey layout</span><small>Hypothetical · n=20</small></div>
+          <div class="bar"><div><span>Personalized guidance</span><b>80%</b></div><i style="--value:80%"></i></div>
+          <div class="bar"><div><span>Clear AI reasoning</span><b>70%</b></div><i style="--value:70%"></i></div>
+          <div class="bar"><div><span>Generic advice frustration</span><b>65%</b></div><i style="--value:65%"></i></div>
+          <div class="bar"><div><span>Small milestones</span><b>60%</b></div><i style="--value:60%"></i></div>
+          <p>These figures must be replaced before presenting the work as research evidence.</p>
+        </div>
+      </div>
+
+      <div class="insight-grid reveal">
+        <article><span>01</span><h3>Narrow the field</h3><p>Help users make sense of options rather than adding another overwhelming list.</p></article>
+        <article><span>02</span><h3>Show the reasoning</h3><p>Connect each recommendation to the user’s interests, skills and responses.</p></article>
+        <article><span>03</span><h3>Make action manageable</h3><p>Turn a career direction into small milestones and a useful next step.</p></article>
+      </div>
+
+      <div class="persona-section">
+        <div class="persona-card glass reveal">
+          <div class="persona-monogram">AS</div>
+          <p class="eyebrow">PRIMARY PERSONA</p>
+          <h3>Ananya Sharma</h3>
+          <p class="persona-role">21 · Final-year Computer Science student</p>
+          <blockquote>“I know I want a successful career, but I need clarity on which path is right for me.”</blockquote>
+          <span class="status-label">Fictional, persona-based profile</span>
+        </div>
+        <div class="persona-details reveal" data-delay="1">
+          <div><h4>Goals</h4><ul><li>Find paths that match her interests and skills</li><li>Identify gaps and prepare for industry</li><li>Build an actionable career roadmap</li></ul></div>
+          <div><h4>Frustrations</h4><ul><li>Conflicting online advice</li><li>Generic recommendations</li><li>Unclear learning paths and progress</li></ul></div>
+          <div><h4>Behaviours</h4><ul><li>Researches through Google, YouTube and LinkedIn</li><li>Compares options before deciding</li><li>Prefers visual, concise guidance</li></ul></div>
+          <div><h4>Design implication</h4><p>Make every match understandable and always connect insight to a practical next action.</p></div>
+        </div>
+      </div>
+
+      <div class="journey-section">
+        <div class="section-heading reveal"><p class="eyebrow">USER JOURNEY</p><h2>From uncertainty to an evolving career plan.</h2></div>
+        <div class="journey-track reveal" tabindex="0" aria-label="Scrollable six-stage user journey">
+          <article><span>01</span><h3>Onboard</h3><small>Curious, uncertain</small><p>Select interests, skills and goals; complete the initial assessment.</p><b>Opportunity</b><p>Keep forms short and explain data use.</p></article>
+          <article><span>02</span><h3>Explore</h3><small>Interested, hopeful</small><p>Review matches, ask the mentor and compare roles.</p><b>Opportunity</b><p>Explain why each match is relevant.</p></article>
+          <article><span>03</span><h3>Act</h3><small>Motivated, stretched</small><p>Choose a direction and begin roadmap milestones.</p><b>Opportunity</b><p>Break goals into manageable steps.</p></article>
+          <article><span>04</span><h3>Review</h3><small>Proud, sometimes stuck</small><p>Check milestones, skills and remaining gaps.</p><b>Opportunity</b><p>Show meaningful progress and the next action.</p></article>
+          <article><span>05</span><h3>Get support</h3><small>Connected or frustrated</small><p>Ask questions, share feedback and seek help.</p><b>Opportunity</b><p>Offer clear support pathways.</p></article>
+          <article><span>06</span><h3>Grow</h3><small>Confident, independent</small><p>Revisit goals as interests and opportunities evolve.</p><b>Opportunity</b><p>Adapt guidance and notification controls.</p></article>
+        </div>
+      </div>
+
+      <div class="architecture-grid">
+        <div class="flow-panel glass reveal">
+          <p class="eyebrow">CORE USER FLOW</p>
+          <div class="flow" aria-label="Core application flow">
+            <span>Open app</span><i>↓</i>
+            <div><span>Returning user</span><b>or</b><span>New user</span></div><i>↓</i>
+            <div><span>Login</span><b>or</b><span>Profile setup</span></div><i>↓</i>
+            <span>Assessment & analysis</span><i>↓</i>
+            <span class="accent">Career matches</span><i>↓</i>
+            <span>Home dashboard</span>
+            <div class="flow-branches"><small>Explore</small><small>AI Mentor</small><small>Roadmap</small><small>Progress</small></div>
+          </div>
+        </div>
+        <div class="ia-panel reveal" data-delay="1">
+          <p class="eyebrow">INFORMATION ARCHITECTURE</p>
+          <h3>Five primary destinations, supporting flows one tap away.</h3>
+          <div class="ia-list">
+            <div><span>01</span><p><strong>Home</strong>Overview, recommendations, progress, quick actions</p></div>
+            <div><span>02</span><p><strong>Explore</strong>Career list, details, comparison, match explanation</p></div>
+            <div><span>03</span><p><strong>AI Mentor</strong>Questions, guidance, follow-up prompts</p></div>
+            <div><span>04</span><p><strong>Roadmap</strong>Milestones, gaps, resources, next steps</p></div>
+            <div><span>05</span><p><strong>Profile</strong>Saved careers, preferences, notifications, privacy</p></div>
+          </div>
+          <p class="scope-note">Community and support appear in the planning IA but are not implemented in the current frontend prototype.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ui-study" class="section ui-section">
+      <div class="section-kicker reveal"><span>02</span><p>UI CASE STUDY</p></div>
+      <div class="section-heading split reveal">
+        <h2>A calm, cinematic system built around trust and progress.</h2>
+        <p>Near-black navy surfaces establish focus. Cyan communicates action and progress, while violet is reserved for AI guidance and reflective moments.</p>
+      </div>
+      <div class="ui-feature">
+        <div class="ui-feature-phone reveal"><div class="phone"><div class="phone-speaker"></div><img src="./assets/screenshots/mentor.png" alt="AI Mentor chat screen"></div></div>
+        <div class="ui-decisions reveal" data-delay="1">
+          <article><span>01</span><div><h3>Hierarchy before decoration</h3><p>The mentor card and first career match receive the strongest depth; secondary cards remain restrained.</p></div></article>
+          <article><span>02</span><div><h3>Glass with a purpose</h3><p>Translucency separates layers and navigation without coating every element in blur.</p></div></article>
+          <article><span>03</span><div><h3>Motion as feedback</h3><p>Entrances clarify sequence; selection pops, progress fills and save feedback confirm state.</p></div></article>
+          <article><span>04</span><div><h3>Accessible restraint</h3><p>Readable contrast, 44-pixel targets, focus-visible states and reduced-motion support are built in.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="section system-section">
+      <div class="section-heading reveal"><p class="eyebrow">DESIGN SYSTEM · EXTRACTED FROM CODE</p><h2>One visual language, two intentional themes.</h2></div>
+      <div class="token-layout">
+        <div class="palette glass reveal">
+          <h3>Core palette</h3>
+          <div class="swatches">
+            <div><i style="--swatch:#080b14"></i><span>Midnight</span><code>#080B14</code></div>
+            <div><i style="--swatch:#63e8ff"></i><span>Primary cyan</span><code>#63E8FF</code></div>
+            <div><i style="--swatch:#6488ff"></i><span>Electric blue</span><code>#6488FF</code></div>
+            <div><i style="--swatch:#a58bff"></i><span>AI violet</span><code>#A58BFF</code></div>
+            <div><i style="--swatch:#6de7b2"></i><span>Success</span><code>#6DE7B2</code></div>
+            <div><i style="--swatch:#f5f7ff"></i><span>Main text</span><code>#F5F7FF</code></div>
+          </div>
+        </div>
+        <div class="type-card glass reveal" data-delay="1">
+          <h3>Typography</h3>
+          <div class="type-sample"><span>Display · 30</span><strong>Find your direction.</strong></div>
+          <div class="type-sample"><span>Card title · 18</span><b>Careers that fit you</b></div>
+          <div class="type-sample"><span>Body · 13.5</span><p>Concise guidance stays readable on a narrow mobile frame.</p></div>
+          <p class="token-note">Inter is wired through Google Fonts in the application CSS.</p>
+        </div>
+      </div>
+      <div class="component-row reveal">
+        <div class="component-demo"><span>PRIMARY ACTION</span><button>Continue Roadmap <b>→</b></button></div>
+        <div class="component-demo"><span>SELECTABLE CHIP</span><div class="demo-chips"><i>Technology</i><i class="selected">✓ Design</i></div></div>
+        <div class="component-demo"><span>PROGRESS</span><div class="demo-progress"><div><i></i></div><p><b>37%</b> roadmap complete</p></div></div>
+        <div class="component-demo"><span>GLASS SURFACE</span><div class="demo-glass"><b>Subtle depth</b><p>1px border · 14px blur</p></div></div>
+      </div>
+      <div class="motion-grid reveal">
+        <article><span class="motion-orb"></span><h3>Ambient intelligence</h3><p>A six-second orb float pairs with a controlled five-second light cycle.</p></article>
+        <article><span class="motion-save">◇</span><h3>State confirmation</h3><p>Save actions use a short scale pop without delaying navigation.</p></article>
+        <article><span class="motion-progress"><i></i></span><h3>Progress reveal</h3><p>Bars and rings animate to actual values, never invented ones.</p></article>
+        <article><span class="motion-reduce">Aa</span><h3>Reduced motion</h3><p>Nonessential animation collapses to near-zero duration when requested.</p></article>
+      </div>
+    </section>
+
+    <section id="screens" class="section gallery-section">
+      <div class="section-heading split reveal">
+        <div><p class="eyebrow">IMPLEMENTED SCREENS</p><h2>The product, end to end.</h2></div>
+        <p>Select any capture for a full-size view. Every image comes from the working frontend, not a separate mockup.</p>
+      </div>
+      <div class="screen-gallery">
+        <button class="gallery-card reveal" data-full="./assets/screenshots/welcome.png" data-title="Welcome"><img loading="lazy" src="./assets/screenshots/welcome.png" alt="Welcome screen"><span><b>Welcome</b><small>Product introduction</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/login.png" data-title="Login"><img loading="lazy" src="./assets/screenshots/login.png" alt="Login screen"><span><b>Login</b><small>Returning journey</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/interests.png" data-title="Interests & Skills"><img loading="lazy" src="./assets/screenshots/interests.png" alt="Interests and skills onboarding screen"><span><b>Interests & Skills</b><small>Profile input</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/assessment.png" data-title="Assessment"><img loading="lazy" src="./assets/screenshots/assessment.png" alt="Career assessment screen"><span><b>Assessment</b><small>Approachable questions</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/results.png" data-title="Profile Results"><img loading="lazy" src="./assets/screenshots/results.png" alt="Assessment results screen"><span><b>Profile Results</b><small>Transparent summary</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/explore.png" data-title="Career Exploration"><img loading="lazy" src="./assets/screenshots/explore.png" alt="Career exploration screen"><span><b>Career Exploration</b><small>Search and filtering</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/details.png" data-title="Career Details"><img loading="lazy" src="./assets/screenshots/details.png" alt="UX Designer career details screen"><span><b>Career Details</b><small>Why it matches</small></span></button>
+        <button class="gallery-card reveal" data-full="./assets/screenshots/settings.png" data-title="Settings"><img loading="lazy" src="./assets/screenshots/settings.png" alt="Settings screen"><span><b>Settings</b><small>User control</small></span></button>
+      </div>
+    </section>
+
+    <section id="about" class="section closing-section">
+      <div class="closing-copy reveal">
+        <p class="eyebrow">OUTCOMES & NEXT STEPS</p>
+        <h2>A complete frontend concept—ready for evidence-led validation.</h2>
+        <p>The implemented prototype demonstrates the full direction: onboarding, assessment, explainable recommendations, AI mentor, roadmap, progress and settings. It does not connect to real AI, authentication or server storage.</p>
+      </div>
+      <div class="outcome-grid reveal" data-delay="1">
+        <article><span>COMPLETED</span><ul><li>20 responsive mobile screens</li><li>Dark and light themes</li><li>Persistent local preferences</li><li>Accessible motion and focus states</li></ul></article>
+        <article><span>VALIDATE NEXT</span><ul><li>Run real participant research</li><li>Test recommendation explanations</li><li>Measure onboarding comprehension</li><li>Validate roadmap usefulness</li></ul></article>
+      </div>
+      <div class="closing-note reveal">
+        <span>AI CAREER MENTOR</span>
+        <h2>Find your direction.<br>Build your future.</h2>
+        <a class="button primary" href="#overview">Return to the top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>AI Career Mentor · UX/UI case study</p>
+    <p>Frontend prototype · No production AI or authentication connected</p>
+  </footer>
+
+  <dialog class="lightbox" aria-labelledby="lightbox-title">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous image">←</button>
+    <figure><img src="" alt=""><figcaption id="lightbox-title"></figcaption></figure>
+    <button class="lightbox-next" type="button" aria-label="Next image">→</button>
+  </dialog>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

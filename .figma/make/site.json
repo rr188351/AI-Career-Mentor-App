@@ -1,0 +1,11 @@
+{
+  "title": "AI Career Mentor App",
+  "description": "Helps students, graduates, and career changers discover personalized career paths, understand skill gaps, and follow practical roadmaps with AI mentor guidance.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
